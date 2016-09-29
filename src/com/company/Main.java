@@ -18,6 +18,16 @@ public class Main {
         String name = scanner.nextLine();
         Animal a = createAnimal(name);
         System.out.println(a);
+
+        //anonymous classes
+        Mammal d2 = new Mammal() {
+            @Override
+            void makeSound() {
+                System.out.println("Bark!");
+            }
+        };
+
+        d2.makeSound();
     }
 
     //factory method
